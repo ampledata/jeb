@@ -1,0 +1,19 @@
+# Python Module requirements for generating articles.
+#
+# Author: Greg Albrecht
+# Copyright: Copyright 2012 Greg Albrecht
+# License: Creative Commons Attribution 3.0 Unported License.
+# URL: http://ampledata.org/
+
+
+pygments
+markdown
+jinja2
+PyRSS2Gen
+pylint
+pep8
+mock
+nose
+flake8
+coverage
+clonedigger
