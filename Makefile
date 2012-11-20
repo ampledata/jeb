@@ -14,3 +14,6 @@ install_requirements:
 
 uninstall:
 	pip uninstall jeb
+
+clean:
+	rm -rf *.pyc
