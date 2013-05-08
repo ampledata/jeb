@@ -16,4 +16,6 @@ uninstall:
 	pip uninstall jeb
 
 clean:
-	rm -rf *.pyc
+	rm -rf *.egg* build dist *.py[oc] */*.py[co] cover doctest_pypi.cfg \
+	 	nosetests.xml pylint.log *.egg output.xml flake8.log tests.log \
+		test-result.xml htmlcov fab.log
