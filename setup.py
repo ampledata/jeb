@@ -21,7 +21,7 @@ except ImportError:
     # pylint: disable=F0401,E0611
     from distutils.core import setup
 
-
+packages = ['jeb']
 requires = ['jinja2', 'markdown', 'PyRSS2Gen']
 
 
@@ -42,7 +42,9 @@ setup(
     author='Greg Albrecht',
     author_email='gba@gregalbrecht.com',
     url='https://github.com/ampledata/jeb',
-    entry_points={'console_scripts': ['jeb = jeb:main']},
+    entry_points={'console_scripts': ['jeb = jeb.cli:main']},
+    package_dir={'jeb': 'jeb'},
+    packages=packages,
     long_description=open('README.rst').read(),
     package_data={'': ['LICENSE']},
     license=open('LICENSE').read(),

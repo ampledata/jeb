@@ -17,7 +17,6 @@ import glob
 import os
 import shlex
 import subprocess
-import sys
 
 import jinja2
 import markdown
@@ -100,19 +99,3 @@ def generate_articles(articles):
 
         with open(article['html_file'], 'w') as article_fd:
             article_fd.write(rendered_article)
-
-
-def main():
-    """Reads in all article content and renders to HTML."""
-    article_files = glob.glob('articles/*.md')
-    articles = []
-    for article_file in article_files:
-        articles.append(generate_article_names(article_file))
-
-    generate_articles(articles)
-    generate_index(articles)
-    generate_rss(articles)
-
-
-if __name__ == '__main__':
-    sys.exit(main())
