@@ -13,7 +13,6 @@ __license__ = 'Creative Commons Attribution 3.0 Unported License'
 
 
 import datetime
-import glob
 import os
 import shlex
 import subprocess

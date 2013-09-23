@@ -8,6 +8,8 @@ __copyright__ = 'Copyright 2012 Greg Albrecht'
 __license__ = 'Creative Commons Attribution 3.0 Unported License'
 
 
+import glob
+
 import jeb
 
 
