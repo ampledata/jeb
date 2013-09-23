@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-"""Generate syntax highlighted articles from Markdown.
+# -*- coding: utf-8 -*-
+
+"""
+Generate syntax highlighted articles from Markdown.
 
 Derived from stefanB's blog post: http://bit.ly/H0qZ3O
 """
@@ -14,6 +17,7 @@ import glob
 import os
 import shlex
 import subprocess
+import sys
 
 import jinja2
 import markdown
@@ -111,4 +115,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())
