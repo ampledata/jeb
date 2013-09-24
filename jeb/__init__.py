@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-"""Generate syntax highlighted articles from Markdown.
+# -*- coding: utf-8 -*-
+
+"""
+Generate syntax highlighted articles from Markdown.
 
 Derived from stefanB's blog post: http://bit.ly/H0qZ3O
 """
@@ -10,7 +13,6 @@ __license__ = 'Creative Commons Attribution 3.0 Unported License'
 
 
 import datetime
-import glob
 import os
 import shlex
 import subprocess
@@ -96,19 +98,3 @@ def generate_articles(articles):
 
         with open(article['html_file'], 'w') as article_fd:
             article_fd.write(rendered_article)
-
-
-def main():
-    """Reads in all article content and renders to HTML."""
-    article_files = glob.glob('articles/*.md')
-    articles = []
-    for article_file in article_files:
-        articles.append(generate_article_names(article_file))
-
-    generate_articles(articles)
-    generate_index(articles)
-    generate_rss(articles)
-
-
-if __name__ == '__main__':
-    main()
