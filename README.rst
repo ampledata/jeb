@@ -11,11 +11,11 @@ Github: https://github.com/ampledata/jeb
 
 Author
 ======
-Greg Albrecht <mailto:gba@gregalbrecht.com>
+Greg Albrecht <mailto:oss@undef.net>
 
 Copyright
 =========
-Copyright 2012 Greg Albrecht
+Copyright 2017 Greg Albrecht
 
 License
 =======

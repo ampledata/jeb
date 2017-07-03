@@ -7,11 +7,6 @@ Generate syntax highlighted articles from Markdown.
 Derived from stefanB's blog post: http://bit.ly/H0qZ3O
 """
 
-__author__ = 'Greg Albrecht <gba@gregalbrecht.com>'
-__copyright__ = 'Copyright 2012 Greg Albrecht'
-__license__ = 'Creative Commons Attribution 3.0 Unported License'
-
-
 import datetime
 import os
 import shlex
@@ -20,6 +15,10 @@ import subprocess
 import jinja2
 import markdown
 import PyRSS2Gen
+
+__author__ = 'Greg Albrecht <oss@undef.net>'
+__copyright__ = 'Copyright 2017 Greg Albrecht'
+__license__ = 'Creative Commons Attribution 3.0 Unported License'
 
 
 JINJA2_ENV = jinja2.Environment(loader=jinja2.FileSystemLoader(['templates']))
@@ -85,8 +84,8 @@ def generate_articles(articles):
     for article in articles:
         article_content = ''
 
-        print "in: %s" % article['file']
-        print "out: %s" % article['html_file']
+        print(("in:", article['file']))
+        print(("out:", article['html_file']))
 
         with open(article['file'], 'r') as article_fd:
             article_content = article_fd.read()

@@ -1,7 +1,7 @@
 # Python Module requirements for generating articles.
 #
-# Author:: Greg Albrecht <gba@gregalbrecht.com>
-# Copyright:: Copyright 2012 Greg Albrecht
+# Author:: Greg Albrecht <oss@undef.net>
+# Copyright:: Copyright 2017 Greg Albrecht
 # License:: Creative Commons Attribution 3.0 Unported License
 # Source:: https://github.com/ampledata/jeb
 #
