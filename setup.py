@@ -32,7 +32,7 @@ publish()
 
 
 setuptools.setup(
-    version='2.0.0b1',
+    version='2.0.0',
     name='jeb',
     description='JEB: Just Enough Blog',
     author='Greg Albrecht',
