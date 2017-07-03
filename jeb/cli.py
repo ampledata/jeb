@@ -3,14 +3,13 @@
 
 """CLI methods for JEB."""
 
-__author__ = 'Greg Albrecht <gba@gregalbrecht.com>'
-__copyright__ = 'Copyright 2012 Greg Albrecht'
-__license__ = 'Creative Commons Attribution 3.0 Unported License'
-
-
 import glob
 
 import jeb
+
+__author__ = 'Greg Albrecht <oss@undef.net>'
+__copyright__ = 'Copyright 2017 Greg Albrecht'
+__license__ = 'Creative Commons Attribution 3.0 Unported License'
 
 
 def main():
