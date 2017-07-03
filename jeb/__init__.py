@@ -33,7 +33,7 @@ def get_article_ts(article_file):
     git_cmd = 'git log --reverse --pretty=format:%aD'
     spc = subprocess.Popen(
         shlex.split(' '.join([git_cmd, article_file])), stdout=subprocess.PIPE)
-    return spc.stdout.read().split('\n')[0]
+    return spc.stdout.read().decode().split('\n')[0]
 
 
 def generate_rss(articles):
