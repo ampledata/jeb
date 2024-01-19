@@ -15,7 +15,7 @@ Greg Albrecht <mailto:oss@undef.net>
 
 Copyright
 =========
-Copyright 2017 Greg Albrecht
+Copyright Greg Albrecht
 
 License
 =======

@@ -1,50 +1,27 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+#
+# Copyright Greg Albrecht
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
 
+"""Setup for JEB.
+
+:source: <https://github.com/ampledata/jeb>
 """
-JEB: Just Enough Blog Python Setup File.
 
-Source:: https://github.com/ampledata/jeb
-"""
+from setuptools import setup
 
-import os
-import setuptools
-import sys
-
-__author__ = 'Greg Albrecht <oss@undef.net>'
-__copyright__ = 'Copyright 2017 Greg Albrecht'
-__license__ = 'Creative Commons Attribution 3.0 Unported License'
-
-
-packages = ['jeb']
-requires = ['jinja2', 'markdown', 'PyRSS2Gen']
-
-
-def publish():
-    """Function for publishing package to pypi."""
-    if sys.argv[-1] == 'publish':
-        os.system('python setup.py sdist')
-        os.system('twine upload dist/*')
-        sys.exit()
-
-
-publish()
-
-
-setuptools.setup(
-    version='2.0.0',
-    name='jeb',
-    description='JEB: Just Enough Blog',
-    author='Greg Albrecht',
-    author_email='oss@undef.net',
-    url='https://github.com/ampledata/jeb',
-    entry_points={'console_scripts': ['jeb = jeb.cli:main']},
-    package_dir={'jeb': 'jeb'},
-    packages=packages,
-    long_description=open('README.rst').read(),
-    package_data={'': ['LICENSE']},
-    license=open('LICENSE').read(),
-    install_requires=requires,
-    zip_safe=False,
-    include_package_data=True
-)
+if __name__ == "__main__":
+    setup()
